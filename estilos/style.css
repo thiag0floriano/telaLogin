@@ -5,10 +5,12 @@
     padding: 0;
 }
 
-main {
+body {
     background-image: url("../img/Login-backg.jpg");
-    background-position: center center;
     background-repeat: no-repeat;
-    
+    background-position: center center;
+    background-size: cover;
+    max-height: 80vb;
+    width: auto;
     
 }
