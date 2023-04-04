@@ -6,29 +6,26 @@
 }
 
 body {
-    background-image: url("../img/Fundo-Login-Oops-1.jpg");
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: cover;
     height: 100vh;
-    width: 100%;
-    
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    height: 100vh;
-    width: 100%;
-    
+main {
+    height: 100%;
 }
+section.imagem {
+    height: 100%;
+    width: 55%;
+    background: url(../img/FundoLogin.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
 form {
-    display: grid;
-    grid-template-columns: 100px;
-    background-color: rgba(211, 211, 211, 0.582);
     height: 600px;
     width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(211, 211, 211, 0.582);
     border-radius: 10px;
-    margin-right: 7%;
 }
