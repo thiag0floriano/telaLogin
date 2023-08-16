@@ -13,22 +13,28 @@
   <main>
 
     <section class="imagem">
-
+      <!-- <img src="img/FundoLogin.jpg" class="imagem-oops" alt="imagem_oops"> -->
     </section>
 
-    <section class="card">
-      <form>
-        <!-- <img src="img/logo-oops1.png" alt="logo Oops telecom" /> -->
-        <div class="card-content">
-          <img src="img/icoLogin.png" alt="iconi de usuário" />
-          <label for="usuario">Usuário</label>
-          <input type="text" id="usuario" autocomplete="off" />
-          <label for="password">Senha</label>
-          <input type="password" id="password" autocomplete="off" />
-          <input type="submit" value="Entrar" class="submit" />
-          <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+    <section class="normal">
+      <div class="card-login">
+        <div>
+          <img src="img/icoLogin.png" alt="icone-login">
         </div>
-      </form>
+        <h1>LOGIN</h1>
+
+        <div class="textfield">
+          <label for="usuario">Usuário</label>
+          <input type="text" name="usuario" placeholder="Usuário">
+        </div>
+
+        <div class="textfield">
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" placeholder="Senha">
+        </div>
+
+        <button class="btn-login">Login</button>
+      </div>
     </section>
 
   </main>
