@@ -25,14 +25,7 @@ section.imagem {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: url(../img/FundoLogin.jpg) no-repeat fixed center center;
-    background-size: cover; */
 }
-
-/* section.imagem img.imagem-oops{
-     height: 100vh;
-    
-} */
 
 section.normal{
     width: 50vw;
@@ -54,6 +47,11 @@ section.normal div.card-login {
     box-shadow: 0px 6px 20px #00000056;
 }
 
+section.normal div.card-login h1{
+    font-size: 1.5em;
+    margin-top: 15%;
+}
+
 section.normal div.card-login div.textfield {
     width: 100%;
     display: flex;
@@ -65,13 +63,13 @@ section.normal div.card-login div.textfield {
 
 section.normal div.card-login div.textfield input {
     width: 100%;
-    border: none;
+    border: 1px;
     border-radius: 10px;
     padding: 15px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgba(190, 190, 190, 0.767);
     color: #f0ffffde;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 2px 4px 9px 0px #00000056;
     outline: none;
     box-sizing: border-box;
 }
@@ -86,7 +84,7 @@ section.normal div.card-login div.textfield input::placeholder {
 }
 
 section.normal div.card-login button.btn-login {
-    width: 100%;
+    width: 60%;
     padding: 16px 0px;
     margin: 25px;
     border: none;
@@ -95,10 +93,10 @@ section.normal div.card-login button.btn-login {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
+    color: #ffffff;
     background-color: #016acc;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -6px #00000056;
+    box-shadow: 2px 4px 9px 0px #00000056;
 }
 
 section.normal div.card-login button.btn-login:hover {
@@ -107,53 +105,71 @@ section.normal div.card-login button.btn-login:hover {
     transition: 0.5s;
 }
 
-/* form {
-    height: 600px;
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(211, 211, 211, 0.582);
-    border-radius: 10px;
-} */
-
 @media only screen and (max-width: 950px){
     section.normal div.card-login {
         width: 80%;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
     main {
         flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        
     }
 
     section.imagem {
         width: 100vw;
-        height: 30%;
-        background-image: url();
-        background-repeat: no-repeat;
-        background-size: contain;
-        /* transform: rotate(90deg); */
-        /* background-size: cover; */
+        height: 50%;
+        position: relative;
+        
     }
 
-    /* section.imagem img.imagem-oops {
+    section.imagem img.imagem-oops {
         transform: rotate(90deg);
         height: 100vh;
-        image
-    } */
+    }
+    
+    section.normal {
+        width: 90%;
+        height: auto;
+        position: absolute;
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-height: 680px){
     
     section.normal {
         width: 80%;
         height: auto;
-        /* position: absolute; */
+        position: absolute;
+        margin-top: 30%;
+        margin-bottom: 20%;
     }
 
-    
+    section.normal div.card-login {
+        width: 80%;
+        height: 60vh;
+    }
 
-    /* section.normal div.card-login {
-        margin-top: 40%;
-    } */
+    section.normal div.card-login div.textfield {
+        margin: 0px;
+    }
+
+    section.normal div.card-login div.textfield input {
+        border-radius: 9px;
+        padding: 12px;
+    }
+
+    section.normal div.card-login button.btn-login {
+        width: 55%;
+        padding: 13px 0px;
+    }
+
+    section.normal div.card-login div.icoLogin {
+        margin-top: 15px;
+    
+    }
 }
