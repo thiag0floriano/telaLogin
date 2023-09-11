@@ -55,17 +55,17 @@ section.normal div.card-login h1{
 section.normal div.card-login div.textfield {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
     margin: 10px 0px;
 }
 
 section.normal div.card-login div.textfield input {
-    width: 100%;
+    width: 200px;
     border: 1px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     background-color: rgba(190, 190, 190, 0.767);
     color: #f0ffffde;
     font-size: 12pt;
@@ -75,8 +75,8 @@ section.normal div.card-login div.textfield input {
 }
 
 section.normal div.card-login div.textfield label {
-    color: #f0ffffde;
-    margin-bottom: 10px;
+    color: #080808de;
+    /* margin: 0px 10px; */
 }
 
 section.normal div.card-login div.textfield input::placeholder {
