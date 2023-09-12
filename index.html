@@ -13,7 +13,7 @@
   <main>
 
     <section class="imagem">
-      <img src="img/FundoLogin2.png" class="imagem-oops" alt="imagem_oops">
+      <!-- <img src="img/FundoLogin2.png" class="imagem-oops" alt="imagem_oops"> -->
     </section>
 
     <section class="normal">
@@ -23,16 +23,32 @@
         </div>
 
         <div class="textfield">
-          <label for="usuario">Usuário</label>
-          <input type="text" name="usuario" placeholder="Usuário">
+          <div class="label-fild">
+            <label for="Email">Email</label>
+          </div>
+          <input type="text" name="email" placeholder="Email">
         </div>
 
         <div class="textfield">
-          <label for="senha">Senha</label>
+          <div class="label-fild">
+            <label for="senha">Senha</label>
+          </div>
           <input type="password" name="senha" placeholder="Senha">
         </div>
 
-        <button class="btn-login">Login</button>
+        <div class="lembrar">
+          <div class="label-fild">
+            <label for="lembrar"><em>Lembrar</em></label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="lembrar" name="lembrar" checked />
+          </div>
+        </div>
+      
+        <button class="btn-login">Entrar</button>
+
+        <label id="esqueci" for="esqueci">Esqueci a senha.</label>
+
       </div>
     </section>
 
