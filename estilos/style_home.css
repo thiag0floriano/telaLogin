@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: #004D84;
+    /* position: absolute; */
+}
+
+div.nav button.icon-button {
+  background-color: #007bff00;
+  color: #fff;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+div.nav button.icon-button img {
+  width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 30px;
+  margin-right: 3px;
+}
+
+.principal {
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+}
+
+.menu {
+    height: 100%;
+    width: 50vw;
+    background-color: antiquewhite;
+}
+
+.imagem {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(232, 250, 215);
+}
+
+.logo_oops {
+    height: 20%;
+    width: 100%;
+    background-image: url(../img/logo-oops1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.imagem_fundo {
+    height: 70%;
+    width: 100%;
+}
+/* button {
+    line-height: 25px;
+  }
+  
+  button::before {
+    background-color: #004D84;
+    content: url(/img/Home.png);
+    float: center;
+    height: 60px;
+  } */
