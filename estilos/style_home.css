@@ -4,16 +4,19 @@
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+    position: fixed;
 }
 
 .nav {
     display: flex;
-    height: 5vh;
+    height: 40px;
     width: 100vw;
     justify-content: space-between;
     background-color: #004D84;
+    align-items: center;
     /* position: absolute; */
 }
 
@@ -21,7 +24,7 @@ div.nav button.icon-button {
   background-color: #007bff00;
   color: #fff;
   border: none;
-  padding: 5px 5px;
+  padding: 5px;
   border-radius: 5px;
   margin: 5px;
 }
@@ -29,43 +32,58 @@ div.nav button.icon-button {
 div.nav button.icon-button img {
   width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
   height: 30px;
-  margin-right: 3px;
+  margin: 0px 3px;
 }
 
 .principal {
-    height: 95vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
+    /* position: fixed; */
 }
 
 .menu {
-    height: 100%;
+    height: 98vh;
     width: 50vw;
     background-color: antiquewhite;
+    position: relative;
 }
 
 .imagem {
-    height: 100%;
+    height: 98vh;
     width: 50vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
     background-color: rgb(232, 250, 215);
+    position: relative;
 }
 
-.logo_oops {
-    height: 20%;
+/* .logo_oops {
+    height: 180px;
     width: 100%;
-    background-image: url(../img/logo-oops1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.img_logo_oops {
+    width: 50%;
 }
 
-.imagem_fundo {
-    height: 70%;
+/* .imagem_fundo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+} */
+
+.img_fundo {
     width: 100%;
 }
+
 /* button {
     line-height: 25px;
   }
